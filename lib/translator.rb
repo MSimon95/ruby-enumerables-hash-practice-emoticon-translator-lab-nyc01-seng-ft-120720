@@ -21,9 +21,9 @@ def get_japanese_emoticon(file, emoticon)
    result = []
   new_sort.each_with_object ({}) do |key, value|
     value.each do |name, emo|
+      binding.pry
     if emoticon == emo
       result << value
-      binding.pry
     end 
   end
   end 
