@@ -15,6 +15,9 @@ def load_library(file)
  
 def get_japanese_emoticon(file, emoticon)
   new_sort = load_library(file)
+    # data.each_with_object ({}) do |(key, value), array|
+    # value.each do |inner_key, names|
+    #   names.each do |name|
    result = []
   new_sort.each do |key, value|
     value.each do |name, emo|
