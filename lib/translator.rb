@@ -20,8 +20,8 @@ def get_japanese_emoticon(file, emoticon)
     #   names.each do |name|
    result = []
   new_sort.each_with_object ({}) do |key, value|
+    binding.pry
     value.each do |name, emo|
-      binding.pry
     if emoticon == emo
       result << value
     end 
