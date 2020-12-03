@@ -20,7 +20,7 @@ def get_japanese_emoticon(file, emoticon)
     #   names.each do |name|
    result = []
   new_sort.each do |key, value|
-    value[:japanese].each do |name, emo|
+    value.each do |name, emo|
     if emoticon == emo
       result << value
     end 
